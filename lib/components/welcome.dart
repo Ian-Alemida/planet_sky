@@ -19,7 +19,7 @@ class welcome extends StatelessWidget {
                 'Welcome back \n Ian Almeida',
                 style: TextStyle(
                     fontSize: 19,
-                    color: Colors.redAccent,
+                    color: Colors.white,
                     fontWeight: FontWeight.w300),
               )
             ],
