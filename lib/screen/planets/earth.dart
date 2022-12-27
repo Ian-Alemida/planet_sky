@@ -9,8 +9,13 @@ class earthScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.redAccent,
         width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/dark_space.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
       ),
     );
   }

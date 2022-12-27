@@ -11,9 +11,11 @@ class uranusScreen extends StatelessWidget {
       body: Container(
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
-            image: DecorationImage(
-          image: AssetImage("assets/image/dark_space.jpg"),
-        )),
+          image: DecorationImage(
+            image: AssetImage("assets/images/dark_space.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
       ),
     );
   }

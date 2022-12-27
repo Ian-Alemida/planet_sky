@@ -8,7 +8,6 @@ import 'package:planet_sky/screen/planets/neptune.dart';
 import 'package:planet_sky/screen/planets/saturn.dart';
 import 'package:planet_sky/screen/planets/sun.dart';
 import 'package:planet_sky/screen/planets/uranus.dart';
-
 import 'screen/planets/earth.dart';
 import 'screen/planets/venus.dart';
 
