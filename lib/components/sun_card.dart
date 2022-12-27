@@ -46,8 +46,7 @@ class sunCard extends StatelessWidget {
                   ),
                   TextButton(
                       onPressed: () {
-                        Navigator.of(context)
-                            .pushReplacementNamed("/sunScreen");
+                        Navigator.of(context).pushNamed("/sunScreen");
                       },
                       child: Text(
                         'Show more...',
