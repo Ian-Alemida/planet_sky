@@ -30,7 +30,7 @@ class cardPlanet extends StatelessWidget {
       children: [
         Container(
           width: 180,
-          height: 270,
+          height: 280,
         ),
         Container(
           decoration: BoxDecoration(
@@ -43,7 +43,7 @@ class cardPlanet extends StatelessWidget {
             borderRadius: BorderRadius.circular(29),
           ),
           width: 180,
-          height: 250,
+          height: 265,
           child: Padding(
             padding: const EdgeInsets.only(top: 90.0, left: 8),
             child: Column(
@@ -59,7 +59,7 @@ class cardPlanet extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: () {
-                      Navigator.of(context).pushReplacementNamed(screen);
+                      Navigator.of(context).pushNamed(screen);
                     },
                     child: Text(
                       'Show more...',
