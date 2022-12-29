@@ -40,33 +40,54 @@ class sunScreen extends StatelessWidget {
             Container(
               child: Column(
                 children: [
-                  Text("The Sun",
-                      style: TextStyle(
-                        fontSize: 49,
-                        color: Colors.white,
-                      )),
-                  Image(
-                    image: AssetImage("assets/images/planets/the_sun.png"),
+                  Text(
+                    "The Sun",
+                    style: TextStyle(
+                      fontSize: 49,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text(
+                    "Star",
+                    style: TextStyle(
+                        color: Colors.white.withOpacity(0.75),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w300),
+                  ),
+                  Stack(
+                    children: [
+                      Image(
+                        image: AssetImage("assets/images/planets/the_sun.png"),
+                      ),
+                      Positioned(
+                        right: 50,
+                        top: 50,
+                        child: Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            color: Colors.black.withOpacity(0.5),
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.device_thermostat,
+                                color: Colors.white,
+                              ),
+                              Text(
+                                "5.000",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
                   ),
                 ],
               ),
             ),
-            Container(
-              width: 120,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-                color: Colors.white.withOpacity(0.5),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: Row(
-                  children: [
-                    Icon(Icons.device_thermostat),
-                    Text("5.000.000 C°"),
-                  ],
-                ),
-              ),
-            )
           ],
         ),
       ),
