@@ -30,7 +30,7 @@ class cardPlanet extends StatelessWidget {
       children: [
         Container(
           width: 180,
-          height: 280,
+          height: 300,
         ),
         Container(
           decoration: BoxDecoration(
@@ -43,7 +43,7 @@ class cardPlanet extends StatelessWidget {
             borderRadius: BorderRadius.circular(29),
           ),
           width: 180,
-          height: 265,
+          height: 275,
           child: Padding(
             padding: const EdgeInsets.only(top: 90.0, left: 8),
             child: Column(
@@ -70,7 +70,7 @@ class cardPlanet extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 147,
+          top: 0,
           right: 63,
           child: Image(
             width: 120,
