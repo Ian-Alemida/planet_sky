@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:planet_sky/components/box_card.dart';
 import 'package:planet_sky/components/card_planet.dart';
 import 'package:planet_sky/components/sun_card.dart';

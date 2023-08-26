@@ -32,7 +32,7 @@ class sunCard extends StatelessWidget {
             width: 360,
             height: 520,
             child: Padding(
-              padding: const EdgeInsets.only(top: 230.0, left: 8),
+              padding: const EdgeInsets.only(top: 240.0, left: 8),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -40,9 +40,12 @@ class sunCard extends StatelessWidget {
                     'The sun',
                     style: TextStyle(fontSize: 29),
                   ),
-                  Text(
-                    'Overview. Our Sun is a 4.5 billion-year-old star – a hot glowing ball of hydrogen and helium at the center of our solar system. The Sun is about 93 million miles (150 million kilometers) from Earth, and without its energy, life as we know it could not exist here on our home planet. The Sun is composed by of hydrogen and helium held together by its own gravity.',
-                    style: TextStyle(fontSize: 16),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 5.0, bottom: 10),
+                    child: Text(
+                      'Overview. Our Sun is a 4.5 billion-year-old star – a hot glowing ball of hydrogen and helium at the center of our solar system. The Sun is about 93 million miles (150 million kilometers) from Earth, and without its energy, life as we know it could not exist here on our home planet. The Sun is composed by of hydrogen and helium held together by its own gravity.',
+                      style: TextStyle(fontSize: 16),
+                    ),
                   ),
                   TextButton(
                       onPressed: () {
